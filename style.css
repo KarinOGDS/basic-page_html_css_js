@@ -1,0 +1,403 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVIGATION */
+
+#home {
+
+  background-color: #4F46E5;
+
+  padding: 25px 35px;
+
+  overflow: auto;
+
+}
+
+.topdiv {
+  float: right;
+}
+
+.topmenu {
+
+  color: white;
+
+  text-decoration: none;
+
+  margin: 15px;
+
+  font-size: 18px;
+
+  transition: .3s;
+}
+
+.topmenu:hover {
+
+  color: #C7D2FE;
+
+  transform: scale(1.05);
+}
+
+.profile_name {
+
+  float: left;
+
+  color: white;
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.contact_info {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 10px;
+
+  font-size: 14px;
+}
+
+.contact_info img {
+
+  width: 22px;
+
+  margin-right: 10px;
+}
+
+/* TITLES */
+
+h2 {
+
+  text-align: center;
+
+  color: #4F46E5;
+
+  font-size: 45px;
+
+  margin-top: 50px;
+}
+
+.introduction {
+
+  font-size: 30px;
+
+  text-align: center;
+}
+
+/* CONTAINERS */
+
+.container {
+  display: flex;
+}
+
+/* ABOUT ME */
+
+.about-me {
+
+  display: flex;
+
+  align-items: center;
+}
+
+#about-me h1 {
+
+  color: #4F46E5;
+
+  font-size: 60px;
+
+  margin-top: 80px;
+}
+
+#about-me p {
+
+  font-size: 22px;
+
+  line-height: 1.8;
+
+  margin-right: 50px;
+}
+
+.profile_image {
+
+  width: 450px;
+
+  margin: 25px;
+}
+
+/* SKILLS */
+
+.all_skills {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.skill {
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  width: 220px;
+
+  padding: 20px;
+
+  margin: 20px;
+
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.15);
+
+  transition: .3s;
+
+  background: white;
+}
+
+.skill:hover {
+
+  transform: translateY(-8px);
+}
+
+.skill img {
+
+  height: 40px;
+}
+
+.skill h6 {
+
+  font-size: 20px;
+
+  margin: 10px 0;
+}
+
+.skill p {
+
+  color: gray;
+}
+
+/* PROJECTS */
+
+.projects-container {
+
+  margin-left: 60px;
+
+  margin-top: 30px;
+}
+
+.project-card {
+
+  margin-bottom: 35px;
+}
+
+.project-card h3 {
+
+  color: #4F46E5;
+
+  font-size: 26px;
+}
+
+.project-card li {
+
+  font-size: 19px;
+
+  line-height: 1.7;
+}
+
+.projects-container hr {
+
+  border: 1px solid #ddd;
+
+  width: 85%;
+}
+
+/* RECOMMENDATIONS */
+
+.all_recommendations {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.recommendation {
+
+  width: 320px;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+  font-style: italic;
+
+  font-size: 18px;
+
+  transition: .3s;
+}
+
+.recommendation:hover {
+
+  transform: translateY(-5px);
+}
+
+.recommendation span {
+
+  color: #4F46E5;
+
+  font-size: 22px;
+}
+
+/* FORM */
+
+.flex_center {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+fieldset {
+
+  width: 55%;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 35px;
+}
+
+input,
+textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 10px;
+
+  margin-bottom: 15px;
+
+  font-size: 16px;
+
+  border-radius: 6px;
+
+  border: 1px solid lightgray;
+}
+
+/* BUTTONS */
+
+button {
+
+  background-color: white;
+
+  color: #4F46E5;
+
+  border: 1px solid #4F46E5;
+
+  border-radius: 8px;
+
+  width: 180px;
+
+  padding: 12px;
+
+  font-size: 18px;
+
+  transition: .3s;
+}
+
+button:hover {
+
+  background-color: #4F46E5;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* SCROLL TOP BUTTON */
+
+.iconbutton {
+
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  background-color: #4F46E5;
+
+  position: fixed;
+
+  right: 3%;
+
+  bottom: 3%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* POPUP */
+
+.popup {
+
+  width: 420px;
+
+  background-color: #4F46E5;
+
+  color: white;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  position: fixed;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+
+  padding: 25px;
+}
+
+.popup button {
+
+  background: white;
+
+  color: #4F46E5;
+
+  margin: auto;
+}
